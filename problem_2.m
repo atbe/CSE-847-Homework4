@@ -35,4 +35,4 @@ plot(parameters, test_accuracy, 'o-');
 title('Sparse Logistic Regression Experiment');
 xlabel('l1 Parameter');
 ylabel('Testing Accuracy');
-
+saveas(gcf, 'problem_2_accuracy.png');
