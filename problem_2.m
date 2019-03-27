@@ -14,7 +14,6 @@ predictions = zeros(numel(parameters), size(X_test,1));
 
 bias_values = zeros(size(parameters));
 number_of_features = zeros(size(parameters));
-number_of_features_with_bias = zeros(size(parameters));
 test_accuracy = zeros(size(parameters));
 all_aucs = zeros(size(parameters));
 for i = 1:numel(parameters)
@@ -36,3 +35,10 @@ title('Sparse Logistic Regression Experiment');
 xlabel('l1 Parameter');
 ylabel('Testing Accuracy');
 saveas(gcf, 'problem_2_accuracy.png');
+
+figure;
+plot(parameters, number_of_features, 'o-');
+title('Sparse Logistic Regression Experiment');
+xlabel('l1 Parameter');
+ylabel('Number of features used');
+saveas(gcf, 'problem_2_number_of_features_used.png');
