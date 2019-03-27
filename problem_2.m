@@ -8,6 +8,10 @@ X_train = alz_data.X_train;
 y_train = alz_data.y_train;
 X_test = alz_data.X_test;
 y_test = alz_data.y_test;
+
+disp(numel(y_test ~= 0));
+disp(numel(y_test ~= 1));
+
 parameters = [0.01, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1];
 
 number_of_features = zeros(size(parameters));
