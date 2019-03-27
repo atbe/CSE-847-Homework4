@@ -22,4 +22,4 @@ plot(train_sizes, test_accuracies, 'o-');
 title('Problem 1: Logistic Regression Experiment');
 xlabel('Number of elements (n)');
 ylabel('Testing Accuracy');
-saveas(gcf, 'problem-1-accuracy.png');
+saveas(gcf, 'problem_1_accuracy.png');
